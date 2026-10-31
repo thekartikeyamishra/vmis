@@ -1,0 +1,36 @@
+import { L, type Localized } from "@/i18n/config";
+
+export interface Faq { id: string; category: "admissions" | "academics" | "early-years" | "general"; q: Localized; a: Localized }
+
+export const FAQS: Faq[] = [
+  { id: "classes", category: "academics",
+    q: L("Which classes does VMIS offer?", "वी.एम.आई.एस. में कौन-कौन सी कक्षाएँ हैं?"),
+    a: L("VMIS offers twelve levels: Nursery, Prep, LKG, UKG and Classes I to VIII.", "वी.एम.आई.एस. में बारह स्तर हैं: नर्सरी, प्रेप, एल.के.जी., यू.के.जी. तथा कक्षा 1 से 8।") },
+  { id: "board", category: "academics",
+    q: L("Is VMIS a CBSE school?", "क्या वी.एम.आई.एस. सीबीएसई विद्यालय है?"),
+    a: L("VMIS follows a CBSE-oriented, NCERT-aligned approach. Formal affiliation details are published on the CBSE Approach and Public Disclosure pages only after verification.", "वी.एम.आई.एस. सीबीएसई-उन्मुख, एनसीईआरटी-संरेखित दृष्टिकोण अपनाता है। औपचारिक संबद्धता विवरण सत्यापन के बाद ही सीबीएसई दृष्टिकोण और सार्वजनिक प्रकटीकरण पृष्ठों पर प्रकाशित होते हैं।") },
+  { id: "enquiry-confirms", category: "admissions",
+    q: L("Does submitting an enquiry confirm admission?", "क्या पूछताछ भेजने से प्रवेश सुनिश्चित हो जाता है?"),
+    a: L("No. An enquiry helps the admissions team contact you. Formal admission is completed by the school.", "नहीं। पूछताछ से प्रवेश टीम आपसे संपर्क कर पाती है। औपचारिक प्रवेश विद्यालय द्वारा पूर्ण किया जाता है।") },
+  { id: "age", category: "early-years",
+    q: L("What is the age eligibility for Nursery, Prep, LKG and UKG?", "नर्सरी, प्रेप, एल.के.जी. और यू.के.जी. हेतु आयु पात्रता क्या है?"),
+    a: L("Age criteria are set by the school and published on the Eligibility page once confirmed. Please submit an enquiry and the team will guide you.", "आयु मानदंड विद्यालय द्वारा तय होते हैं और पुष्टि के बाद पात्रता पृष्ठ पर प्रकाशित होते हैं। कृपया पूछताछ भेजें, टीम आपका मार्गदर्शन करेगी।") },
+  { id: "early-exams", category: "early-years",
+    q: L("Are there exams in the early years?", "क्या प्रारंभिक वर्षों में परीक्षाएँ होती हैं?"),
+    a: L("No. Early years learning is play- and activity-based; progress is understood through observation and activities.", "नहीं। प्रारंभिक वर्षों का अधिगम खेल और गतिविधि-आधारित है; प्रगति अवलोकन और गतिविधियों से समझी जाती है।") },
+  { id: "fees", category: "admissions",
+    q: L("Where can I find fee details?", "शुल्क विवरण कहाँ मिलेगा?"),
+    a: L("Fee information is published by the school on the Fee Information page and in the Public Disclosure section.", "शुल्क जानकारी विद्यालय द्वारा शुल्क जानकारी पृष्ठ और सार्वजनिक प्रकटीकरण भाग में प्रकाशित की जाती है।") },
+  { id: "visit", category: "admissions",
+    q: L("Can I visit the school before applying?", "क्या आवेदन से पहले विद्यालय देख सकते हैं?"),
+    a: L("Yes. Tick “school visit” in the enquiry form and the team will arrange a convenient time.", "हाँ। पूछताछ फ़ॉर्म में “विद्यालय भ्रमण” चुनें, टीम सुविधाजनक समय तय करेगी।") },
+  { id: "language", category: "general",
+    q: L("Can I communicate with the school in Hindi?", "क्या विद्यालय से हिंदी में संवाद कर सकते हैं?"),
+    a: L("Yes. Choose Hindi as your preferred language in the enquiry form.", "हाँ। पूछताछ फ़ॉर्म में पसंदीदा भाषा के रूप में हिंदी चुनें।") },
+  { id: "location", category: "general",
+    q: L("Where is VMIS located?", "वी.एम.आई.एस. कहाँ स्थित है?"),
+    a: L("VMIS is in Handia, Prayagraj, Uttar Pradesh. The full address is on the Contact page.", "वी.एम.आई.एस. हंडिया, प्रयागराज, उत्तर प्रदेश में स्थित है। पूरा पता संपर्क पृष्ठ पर है।") },
+  { id: "apps", category: "general",
+    q: L("Is there a VMIS mobile app?", "क्या वी.एम.आई.एस. का मोबाइल ऐप है?"),
+    a: L("Not yet. Android and iOS apps are planned and will be announced when available.", "अभी नहीं। एंड्रॉइड और आईओएस ऐप नियोजित हैं और उपलब्ध होने पर घोषित किए जाएँगे।") },
+];

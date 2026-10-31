@@ -1,0 +1,19 @@
+# Firebase App Hosting (recommended for Next.js). Secrets are stored in Cloud Secret Manager:
+#   firebase apphosting:secrets:set FIREBASE_SERVICE_ACCOUNT_BASE64   (and HASH_SALT, CRON_SECRET, RESEND_API_KEY)
+runConfig:
+  minInstances: 0
+  maxInstances: 4
+  concurrency: 80
+  cpu: 1
+  memoryMiB: 512
+env:
+  - variable: NEXT_PUBLIC_SITE_URL
+    value: https://www.example.com
+  - variable: NOTIFY_PROVIDER
+    value: log
+  - variable: FIREBASE_SERVICE_ACCOUNT_BASE64
+    secret: FIREBASE_SERVICE_ACCOUNT_BASE64
+  - variable: HASH_SALT
+    secret: HASH_SALT
+  - variable: CRON_SECRET
+    secret: CRON_SECRET

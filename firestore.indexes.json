@@ -1,0 +1,18 @@
+{
+  "indexes": [
+    { "collectionGroup": "admission_enquiries", "queryScope": "COLLECTION", "fields": [
+      { "fieldPath": "mobileHash", "order": "ASCENDING" }, { "fieldPath": "levelId", "order": "ASCENDING" }, { "fieldPath": "createdAt", "order": "ASCENDING" } ] },
+    { "collectionGroup": "admission_enquiries", "queryScope": "COLLECTION", "fields": [
+      { "fieldPath": "status", "order": "ASCENDING" }, { "fieldPath": "createdAt", "order": "DESCENDING" } ] },
+    { "collectionGroup": "admission_enquiries", "queryScope": "COLLECTION", "fields": [
+      { "fieldPath": "levelId", "order": "ASCENDING" }, { "fieldPath": "createdAt", "order": "DESCENDING" } ] },
+    { "collectionGroup": "admission_enquiries", "queryScope": "COLLECTION", "fields": [
+      { "fieldPath": "status", "order": "ASCENDING" }, { "fieldPath": "levelId", "order": "ASCENDING" }, { "fieldPath": "createdAt", "order": "DESCENDING" } ] },
+    { "collectionGroup": "admission_status_history", "queryScope": "COLLECTION", "fields": [
+      { "fieldPath": "enquiryId", "order": "ASCENDING" }, { "fieldPath": "at", "order": "DESCENDING" } ] }
+  ],
+  "fieldOverrides": [
+    { "collectionGroup": "rate_limits", "fieldPath": "expiresAt", "ttl": true, "indexes": [] },
+    { "collectionGroup": "idempotency_keys", "fieldPath": "expiresAt", "ttl": true, "indexes": [] }
+  ]
+}
